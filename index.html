@@ -2,20 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rede Social</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="shortcut icon" href="midias/logo-icone.png" type="image/x-icon">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="midias/logo.png" alt="Logo da SLA">
+            </div>
+            <div class="product-info">
+                <div class="product-name">
+                    Rede Social SLA
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <section>
-            <div id="chat-mensagem"></div>
-            <input type="text" id="caixa-de-texto">
-            <button id="enviar-mensagem">Enviar</button>
-        </section>
+        <h2>Mensagens</h2>
+        <iframe id="chat" src="chat.html" frameborder="1" ></iframe>
     </main>
-    <script src="script.js"></script>
+    <footer> <p>Feito por Hiago Santos Silva </p></footer>
 </body>
 </html>
