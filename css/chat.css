@@ -1,0 +1,148 @@
+/*configurações globais*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/*configurações de inputs*/
+
+* > input {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 15px;
+
+}
+
+/*configurações de botões*/
+* > button {
+    background-color: rgb(94, 118, 255);
+    color: white;
+    border: 0;
+    padding: 15px;
+    margin: 15px;
+}
+* > button:hover {
+    transition: 0.2s;
+    color: black;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+body {
+    background-color: white;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+/*Edite o contêiner da mensagem*/
+
+#mensagem-area  {
+    max-width: 80%;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 18px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Texto da mensagem enviada*/
+#mensagem-texto {
+    font-size: 18px;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+/*Imagem de perfil da mensagem*/
+#imagem-perfil-mensagem{
+    border-radius: 18px;
+    margin: 15px;
+    margin-bottom: -15px;
+    height: 40px;
+    max-width: 40px;
+}
+/*Caixa de texto para enviar uma nova mensagem*/
+#caixa-de-texto {
+    width: 50%;
+    height: 29px;
+    margin: 15px;
+    border-radius: 18px;
+    resize: none;
+
+}
+
+
+/*Botão para enviar uma nova mensagem*/
+#enviar-mensagem {
+    width: 100px;
+    height: 40px;
+    border-radius: 18px;
+    height: 50px;
+
+}
+/*Caixa de texto para enviar uma nova resposta*/
+#escreva-resposta {
+    height: 25px;
+    border-radius: 18px;
+    margin: 5px;
+
+}
+
+
+/*Texto da resposta enviada*/
+#resposta-texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 15px;
+    margin-top: 25px;
+
+}
+/*Botão para enviar uma nova resposta*/
+
+/*Imagem de perfil da resposta*/
+#imagem-perfil-resposta{
+    border-radius: 18px;
+    margin: 15px;
+    margin-bottom: -15px;
+    height: 25px;
+    width: 25px;
+}
+
+#enviar-resposta{
+    width: 90px;
+    border-radius: 7px;
+}
+/*Botão para criar uma resposta*/
+
+#botao-responder{
+    width: 120px;
+    border-radius: 18px;
+    height: 50px;
+    background-color: blueviolet;
+
+}
+
+button{
+    height: 60px !important;
+    border-radius: 18px !important;
+}
+/*Edite o campo superior do chat*/
+
+header {
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    border-radius: 18px;
+    max-width: 80%;
+    margin-top: 5px;
+
+}
+
+#foto-perfil {
+    border-radius: 18px;
+    margin: 15px;
+    margin-bottom: -15px;
+    height: 40px;
+    width: 40px;
+}
