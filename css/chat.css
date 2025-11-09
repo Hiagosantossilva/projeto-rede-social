@@ -1,0 +1,226 @@
+/* ==============================
+   CONFIGURAÇÕES GLOBAIS
+============================== */
+* {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-attachment: fixed;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ==============================
+   INPUTS
+============================== */
+input,
+textarea {
+  border: 1px solid #e4e4e4;
+  padding: 12px 15px;
+  border-radius: 18px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #5e76ff;
+  box-shadow: 0 0 4px rgba(94, 118, 255, 0.3);
+}
+
+/* ==============================
+   BOTÕES
+============================== */
+button {
+  background-color: #5e76ff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  margin: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #eaf0ff;
+  color: #222;
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+header {
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 18px;
+  max-width: 90%;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#foto-perfil {
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   ÁREA DE MENSAGEM PRINCIPAL
+============================== */
+#mensagem-area {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 80%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+flex-direction: column; 
+
+  gap: 10px;
+}
+.mensagens {
+  display: flex;
+  flex-direction: column;
+  
+}
+.mensagem{
+    min-width: 90%
+}
+/* Campo de texto principal */
+#caixa-de-texto {
+  width: 55%;
+  height: 42px;
+  border-radius: 25px;
+  resize: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+/* Botão de enviar */
+#enviar-mensagem {
+  height: 48px;
+  min-width: 180px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  box-shadow: 0 3px 8px rgba(94, 118, 255, 0.25);
+}
+
+#enviar-mensagem:hover {
+  background-color: #4660e6;
+  color: #fff;
+}
+
+/* ==============================
+   BLOCO DE MENSAGEM
+============================== */
+#mensagem-texto {
+  font-size: 17px;
+  margin: 20px 0 10px 0;
+}
+
+.mensagem-card {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  margin: 15px auto;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Avatar da mensagem */
+#imagem-perfil-mensagem {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 45px;
+}
+
+/* ==============================
+   COMENTÁRIOS / RESPOSTAS
+============================== */
+.resposta-card {
+  background: #f9f9ff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin: 10px 20px;
+  border-left: 3px solid #5e76ff;
+}
+
+#imagem-perfil-resposta {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#escreva-resposta {
+  height: 35px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 8px 0;
+}
+
+#enviar-resposta {
+  width: 100%;
+  max-width: 140px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* ==============================
+   BOTÃO COMENTAR
+============================== */
+#botao-responder {
+  width: 130px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 15px;
+  background: linear-gradient(90deg, #6a8dff, #8c74ff);
+  box-shadow: 0 3px 10px rgba(108, 120, 255, 0.3);
+}
+
+#botao-responder:hover {
+  background: linear-gradient(90deg, #728cff, #967cff);
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+@media (max-width: 768px) {
+  #mensagem-area {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #caixa-de-texto {
+    width: 90%;
+  }
+
+  #enviar-mensagem {
+    width: 80%;
+  }
+
+  .mensagem-card {
+    width: 90%;
+  }
+}
